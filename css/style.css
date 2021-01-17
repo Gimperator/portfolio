@@ -1,0 +1,211 @@
+
+:root{
+    --tuna: #333240;
+    --coldturkey: #D4BCBD;
+    --manatee: #8E8DAB;
+    --venus: #979496;
+}
+
+body {
+    margin          : 0;
+    box-sizing      : border-box;
+    background-color: #EEE5E9;
+    background-image: url(../img/pexels-trace-hudson-2801818.jpg);
+    background-size : cover;
+    font-family     : 'M PLUS Rounded 1c', sans-serif;
+    font-weight     : 900;
+    color           : #333240;
+    background-attachment: fixed;
+    background-position: 50% 20%;    
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Texturina', serif;
+}
+/* 
+header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
+    clip-path        : polygon(0 0, 100% 0, 100% 61%, 0% 100%);
+
+    background-color: #2D3243;
+    height          : 100px;
+    padding         : 2rem;
+    margin-bottom   : 5rem;
+}
+
+header #logo-name {
+    color      : #FDC60B;
+    font-weight: bold;
+    font-size  : 2.5rem;
+    margin-top : 6px;
+    margin-left: 16px;
+    position   : absolute;
+}
+
+header #logo {
+    width      : 75px;
+    height     : 75px;
+    margin-left: 2rem;
+    float      : left;
+}
+
+header #logo img {
+    width : 100%;
+    height: 100%;
+} */
+
+
+.content::before{
+    height:4rem;
+    background: rgb(153,166,165);
+    background: linear-gradient(180deg, rgba(153,166,165,0) 0%, rgba(51,50,64,1) 100%);
+    margin-top: -4rem;
+}
+
+.content{
+    background-color: var(--tuna);
+    width:100vw;
+    height: 100%
+}
+
+#herosection {
+    width          : 100%;
+    max-width: 50rem;
+    margin: auto;
+    min-height     : 60vh;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    min-height     : 100vh;
+}
+
+.glas {
+    background     : rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1.5rem);
+    padding        : 3.5rem;
+    border-radius  : 1rem;
+    box-shadow     : 0px 2rem 4rem 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.herocontent {
+    margin-top    : 30rem;
+    max-width     : 30rem;
+    display       : flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding:2rem;
+}
+
+.welcome-card {
+    color        : white;
+    font-size    : 1.15rem;
+    float        : right;
+    margin-bottom: 2rem;
+}
+
+.welcome-card>h3 {
+    font-weight: 900;
+    font-style : italic;
+    font-size  : 8rem;
+    margin     : 0;
+    margin-top : -12rem;
+
+}
+
+
+
+.heroimage {
+    color     : white;
+    width     : 100vw;
+    max-width : 40rem;
+    max-height: 40rem;
+    padding   : 0px;
+    position  : absolute;
+}
+
+.heroimage>img {
+    max-height: inherit;
+    max-width : inherit;
+}
+
+.btn-group{
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+.btn-group button {
+    color      : white;
+    font-weight: 900;
+    padding    : 1rem;
+    width      : 45%;
+    border     : 0px;
+    font-size  : 1.2rem;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin:auto;
+    padding-top: 6rem;
+    transition: all 5s ease-in-out;
+}
+
+
+.hidden {
+    height: 0px;
+    opacity:0;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.content>div>article{
+    color:white;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article>div{
+    padding: 0 3rem;
+}
+
+article{
+    margin: 0 0 5rem 0 ;
+}
+
+
+.article-short{
+    font-size: calc(1.2rem + 0.25vw);
+    font-weight: 400;
+    flex:1 400px;
+}
+
+.article-short>h3{
+    color:var(--coldturkey);
+    font-size: 3rem;
+    font-size: calc(2rem + 1.5vw);
+    margin-top: 0;
+}
+
+
+.article-image{
+    flex: 2.5 600px;
+}
+
+.article-image>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+article:after{
+    content: url("../img/trenner.png");
+    margin: 6rem 0;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

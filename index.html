@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesigned</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="herosection">
+        <div class="heroimage glas">
+            <img src="img\Foto-transparent.png" alt="Maxim Foto"></img>
+        </div>
+        <div class="herocontent">
+            <div class="welcome-card glas">
+                <h3>Hey</h3>
+                <p>Mein Name ist Maxim. Ich gestalte, programmiere und automatisiere coole Sachen. Hier finden Sie
+                    einige Auszüge aus meinen bishergen Projekten.</p>
+            </div>
+            <div class="btn-group">
+                <button class="glas grow" onclick="showDesign()"> 
+                    Grafikgestaltung
+                </button>
+                <button class="glas grow" onclick="showProgramming()">
+                    Programmierung
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="wrapper hidden" id="programming-content">
+            <article>
+                <div class="article-image">
+                    <img src="projects/produktionsscript.png" alt="Produktionsskript">
+                </div>
+                <div class="article-short">
+                    <h3>Illustrator Scripting</h3>
+                    <p>Zur automatischen Erstellung verschiedener personalisierten Druckdaten habe ich ein umfangreiches Script programmiert. Dieses generiert anhand der Bestelldaten und den rohen Vorlagedateien für den Auftrag nutzbare Dateien. Dabei greifen die jeweiligen Produktionsschritte Druck, Laserschnitt und Bekleben auf dafür abgestimmte Endformate zu.</p>
+                </div>
+            </article>
+            <article>
+                <div class="article-image">
+                    <img src="projects/produktionsscript.png" alt="Produktionsskript">
+                </div>
+                <div class="article-short">
+                    <h3>Photoshop Scripting</h3>
+                    <p>Artikelbilderstellung</p>
+                </div>
+            </article>
+        </div>
+        <div class="wrapper hidden" id="design-content">
+            <article>
+                <div class="article-image">
+                    <img src="projects/produktionsscript.png" alt="Produktionsskript">
+                </div>
+                <div class="article-short">
+                    <h3>Logodesign</h3>
+                    <p>Dicerse Designs für Logos etc.</p>
+                </div>
+            </article>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
